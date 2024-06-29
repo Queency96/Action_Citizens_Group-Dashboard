@@ -197,10 +197,10 @@
   color: #fff;
 }
 .lg-toolbar .lg-close:after {
-  content: '\e070';
+  content: 'X';
 }
 .lg-toolbar .lg-download:after {
-  content: '\e0f2';
+  content: '⇩';
 }
 
 .lg-sub-html {
@@ -388,7 +388,7 @@ body:not(.lg-from-hash)
   width: 50px;
 }
 .lg-outer .lg-toogle-thumb:after {
-  content: '\e1ff';
+  content: '⊗';
 }
 .lg-outer .lg-toogle-thumb:hover {
   color: #fff;
@@ -500,10 +500,10 @@ body:not(.lg-from-hash)
 }
 
 .lg-autoplay-button:after {
-  content: '\e01d';
+  content: '▶';
 }
 .lg-show-autoplay .lg-autoplay-button:after {
-  content: '\e01a';
+  content: '❚❚';
 }
 
 .lg-outer.lg-css3.lg-zoom-dragging
@@ -557,14 +557,14 @@ body:not(.lg-from-hash)
 }
 
 #lg-zoom-in:after {
-  content: '\e311';
+  content: '⌕+';
 }
 
 #lg-actual-size {
   font-size: 20px;
 }
 #lg-actual-size:after {
-  content: '\e033';
+  content: '⊠';
 }
 
 #lg-zoom-out {
@@ -572,7 +572,7 @@ body:not(.lg-from-hash)
   pointer-events: none;
 }
 #lg-zoom-out:after {
-  content: '\e312';
+  content: '-⌕';
 }
 .lg-zoomed #lg-zoom-out {
   opacity: 1;
@@ -661,10 +661,10 @@ body:not(.lg-from-hash)
 }
 
 .lg-fullscreen:after {
-  content: '\e20c';
+  content: '☐';
 }
 .lg-fullscreen-on .lg-fullscreen:after {
-  content: '\e20d';
+  content: '☐';
 }
 
 .lg-outer #lg-dropdown-overlay {
