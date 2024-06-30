@@ -1417,7 +1417,7 @@ body {
 }
 a:hover,
 a:focus {
-  color: #437ac7;
+  color: #008a02;
   text-decoration: none;
 }
 .overlay {
@@ -4909,7 +4909,7 @@ small {
   color: #ffa117;
 }
 .text-green {
-  color: #5cb65f;
+  color: #008a02;
 }
 .text-blue {
   color: #395bb6;
