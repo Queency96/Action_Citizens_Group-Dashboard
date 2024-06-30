@@ -8402,79 +8402,79 @@ hr {
 }
 .theme-green ::selection {
   color: #fff;
-  background: #5cb65f;
+  background: #008a02;
 }
 .theme-green .auth-main {
-  background: #5cb65f;
+  background: #008a02;
 }
 .theme-green .sidebar-nav .metismenu > li.active > a,
 .theme-green .sidebar-nav .metismenu > li a:hover {
-  background: #5cb65f;
+  background: #008a02;
   color: #fff;
 }
 .theme-green .sidebar-nav .metismenu > li ul .active a {
-  color: #5cb65f;
+  color: #008a02;
 }
 .theme-green .sidebar-nav .metismenu ul a:hover::before {
-  background: #5cb65f;
+  background: #008a02;
 }
 .theme-green .form-control:focus {
-  color: #5cb65f;
+  color: #008a02;
 }
 .theme-green .fancy-checkbox input[type='checkbox']:checked + span:before {
-  color: #5cb65f;
-  border-color: #5cb65f;
+  color: #008a02;
+  border-color: #008a02;
 }
 .theme-green .chat-widget li.right .chat-info {
-  background: #5cb65f;
+  background: #008a02;
   color: #fff;
 }
 .theme-green .chat-widget li.right .chat-info:before {
-  border-left: 10px solid #5cb65f;
+  border-left: 10px solid #008a02;
 }
 .theme-green .wizard > .steps .current a {
-  background: #5cb65f;
+  background: #008a02;
 }
 .theme-green .wizard > .steps .done a {
   background: #77797c;
 }
 .theme-green .pagination > li > a {
-  color: #5cb65f;
+  color: #008a02;
 }
 .theme-green .pagination > li > a:hover {
-  background: #5cb65f;
-  border-color: #5cb65f;
+  background: #008a02;
+  border-color: #008a02;
   color: #fff;
 }
 .theme-green .pagination > li > span {
-  color: #5cb65f;
+  color: #008a02;
 }
 .theme-green .page-item.active .page-link {
-  background-color: #5cb65f;
-  border-color: #5cb65f;
+  background-color: #008a02;
+  border-color: #008a02;
 }
 .theme-green .switch input:checked + .slider {
-  background-color: #5cb65f;
+  background-color: #008a02;
 }
 .theme-green .switch input:focus + .slider {
-  box-shadow: 0 0 1px #5cb65f;
+  box-shadow: 0 0 1px #008a02;
 }
 .theme-green .navbar-fixed-top #navbar-search .form-control:focus,
 .theme-green .navbar-fixed-top #navbar-search .form-control:active {
   background: #fff;
-  color: #5cb65f;
+  color: #008a02;
 }
 .theme-green .navbar-fixed-top {
-  border-color: #5cb65f;
+  border-color: #008a02;
 }
 .theme-green .sidebar_icon {
-  background: #5cb65f;
+  background: #008a02;
 }
 .theme-green #left-sidebar {
-  border-color: #5cb65f;
+  border-color: #008a02;
 }
 .theme-green .navbar-nav .dropdown-menu li.header {
-  background: #5cb65f;
+  background: #008a02;
 }
 .theme-orange ::selection {
   color: #fff;

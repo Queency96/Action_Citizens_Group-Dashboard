@@ -14,7 +14,7 @@ $(function () {
     height: '57px',
     barSpacing: 10,
     barWidth: 5,
-    barColor: '#5CB65F',
+    barColor: '#008a02',
   });
   $('.chart').sparkline('html', {
     type: 'bar',
@@ -26,11 +26,11 @@ $(function () {
   $('#linecustom').sparkline('html', {
     height: '60px',
     width: '100%',
-    lineColor: '#395bb6',
-    fillColor: '#8da4e0',
+    lineColor: '#008a02',
+    fillColor: '#40f743',
     minSpotColor: true,
     maxSpotColor: true,
-    spotColor: '#60bafd',
+    spotColor: '#008a02',
     spotRadius: 0,
   });
   var chart = c3.generate({
@@ -39,7 +39,7 @@ $(function () {
       columns: [['data1', 110, 81, 105, 108, 119, 117, 125, 180]],
       type: 'bar',
       groups: [['data1']],
-      colors: { data1: '#5CB65F' },
+      colors: { data1: '#008a02' },
       names: { data1: 'Views' },
     },
     axis: {
@@ -60,7 +60,7 @@ $(function () {
         ['data2', 37],
       ],
       type: 'donut',
-      colors: { data1: '#5CB65F', data2: '#395bb6' },
+      colors: { data1: '#008a02', data2: '#8a0088' },
       names: { data1: 'This Month', data2: 'Last Month' },
     },
     axis: {},
@@ -78,10 +78,10 @@ $(function () {
       ],
       type: 'bar',
       colors: {
-        data1: '#395bb6',
-        data2: '#4b6bbf',
-        data3: '#6179b9',
-        data4: '#8da4e0',
+        data1: '#008A02',
+        data2: '#00b303',
+        data3: '#00e603',
+        data4: '#1aff1d',
       },
       names: { data1: 'Apple', data2: 'Nokia', data3: 'Mi', data4: 'Vivo' },
     },
@@ -101,12 +101,12 @@ $(function () {
     [
       {
         data: flotSampleData1,
-        color: '#5CB65F',
+        color: '#008a02',
         lines: { fillColor: { colors: [{ opacity: 0 }, { opacity: 0.2 }] } },
       },
       {
         data: flotSampleData2,
-        color: '#395bb6',
+        color: '#8a0088',
         lines: { fillColor: { colors: [{ opacity: 0 }, { opacity: 0.2 }] } },
       },
     ],
