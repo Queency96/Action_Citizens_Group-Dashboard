@@ -83,7 +83,7 @@ $(function () {
         data3: '#00e603',
         data4: '#1aff1d',
       },
-      names: { data1: 'Apple', data2: 'Nokia', data3: 'Mi', data4: 'Vivo' },
+      names: { data1: 'North', data2: 'West', data3: 'East', data4: 'South' },
     },
     axis: {
       x: {
