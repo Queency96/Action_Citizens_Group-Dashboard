@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>ACG | Ui Icon</title>
+    <title>ACG | Dashboard</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta
-      name="description"
-      content="Qubes Bootstrap 4x admin is super flexible, powerful, clean &amp; modern responsive admin dashboard with unlimited possibilities." />
-    <meta name="author" content="GetBootstrap, design by: puffintheme.com" />
+
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
     <link
@@ -19,37 +16,19 @@
     <link
       rel="stylesheet"
       href="../assets/vendor/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="../assets/vendor/animate-css/vivify.min.css" />
-
     <script
       src="https://kit.fontawesome.com/3d02cf7ada.js"
       crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/vendor/animate-css/vivify.min.css" />
+    <link rel="stylesheet" href="../assets/vendor/c3/c3.min.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/chartist/css/chartist.min.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.css" />
 
     <link rel="stylesheet" href="assets/css/site.min.css" />
-
-    <style>
-      .icons-list div {
-        line-height: 40px;
-        white-space: nowrap;
-        cursor: default;
-        position: relative;
-        z-index: 1;
-        padding: 5px;
-      }
-      .icons-list div i {
-        display: inline-block;
-        width: 40px;
-        margin: 0;
-        text-align: center;
-        vertical-align: middle;
-        -webkit-transition: font-size 0.2s;
-        -moz-transition: font-size 0.2s;
-        transition: font-size 0.2s;
-      }
-      .icons-list div:hover i {
-        font-size: 26px;
-      }
-    </style>
   </head>
   <body class="theme-green">
     <div class="overlay"></div>
@@ -61,13 +40,10 @@
               <a class="small_menu_btn" href="javascript:void(0);"
                 ><img
                   style="width: 30px"
-                  src="./image/logo-removebg-preview.png"
-                  alt=""
+                  src="../light/image/logo-removebg-preview.png"
+                  alt="Logo"
               /></a>
-              <a href="index.html"><span><img
-                style="width: 50px"
-                src="./image/ACG-removebg-preview(1).png"
-                alt="" /></span></a>
+              <a href="index.html"><span>Active Citizens Group</span></a>
             </div>
             <form id="navbar-search" class="navbar-form search-form">
               <input
@@ -83,6 +59,9 @@
           <div class="navbar-right">
             <div id="navbar-menu">
               <ul class="nav navbar-nav">
+                <li><a href="#" class="icon-menu reports">Reports</a></li>
+                <li><a href="#" class="icon-menu project">Project</a></li>
+                <li><a href="#" class="icon-menu settings">Settings</a></li>
                 <li class="dropdown">
                   <a
                     href="javascript:void(0);"
@@ -377,8 +356,8 @@
             <div class="tab-pane active" id="Home-icon">
               <nav class="sidebar-nav sidebar-scroll">
                 <ul class="metismenu">
-                  <li>
-                    <a href="index.html"
+                  <li class="active">
+                    <a href="super_admin.html"
                       ><i class="icon-speedometer"></i><span>Dashboard</span></a
                     >
                   </li>
@@ -481,15 +460,13 @@
                       ><i class="icon-tag"></i><span>Blank Page</span></a
                     >
                   </li>
-                  <li class="active">
+                  <li>
                     <a href="#icon" class="has-arrow"
                       ><i class="icon-tag"></i><span>Icons</span></a
                     >
                     <ul>
                       <li><a href="ui-icons.html">FontAwesome</a></li>
-                      <li class="active">
-                        <a href="ui-icons-line.html">Simple Line</a>
-                      </li>
+                      <li><a href="ui-icons-line.html">Simple Line</a></li>
                       <li><a href="ui-icons-themify.html">Themify Icon</a></li>
                     </ul>
                   </li>
@@ -519,7 +496,7 @@
                       <a
                         href="https://nsdbytes.com/cdn-cgi/l/email-protection"
                         class="__cf_email__"
-                        data-cfemail="533f3c263a20233a3621303613362b323e233f367d303c3e"
+                        data-cfemail="c7aba8b2aeb4b7aea2b5a4a287a2bfa6aab7aba2e9a4a8aa"
                         >[email&#160;protected]</a
                       >
                     </p>
@@ -818,8 +795,8 @@
                 <hr />
                 <p>Choose Skin</p>
                 <ul class="choose-skin list-unstyled mb-0">
-                  <li data-theme="indigo" class="active">
-                    <div class="indigo"></div>
+                  <li data-theme="blue" class="active">
+                    <div class="blue"></div>
                   </li>
                   <li data-theme="green"><div class="green"></div></li>
                   <li data-theme="orange"><div class="orange"></div></li>
@@ -835,521 +812,772 @@
         <div class="block-header">
           <div class="row clearfix">
             <div class="col-md-6 col-sm-12">
-              <h1>Simple Line Icons</h1>
+              <h1>Dashboard</h1>
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item">
                     <a href="#"><i class="fa fa-cube"></i></a>
                   </li>
-                  <li class="breadcrumb-item"><a href="#">Icon</a></li>
                   <li class="breadcrumb-item active" aria-current="page">
-                    Line Icons
+                    Dashboard
                   </li>
                 </ol>
               </nav>
             </div>
             <div class="col-md-6 col-sm-12 text-right hidden-xs">
               <a href="javascript:void(0);" class="btn btn-sm btn-primary" title
-                >Create Campaign</a
+                >State Cordinator</a
               >
             </div>
           </div>
         </div>
         <div class="container-fluid">
-          <div class="row clealfix">
-            <div class="col-md-12">
+          <div class="row clearfix">
+            <div class="col-lg-3 col-md-6">
               <div class="card">
                 <div class="body">
-                  <div class="row icons-list">
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-user"></i> icon-user
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-user-female"></i> icon-user-female
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-users"></i> icon-users
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-user-follow"></i> icon-user-follow
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-user-following"></i> icon-user-following
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-user-unfollow"></i> icon-user-unfollow
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-trophy"></i> icon-trophy
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-speedometer"></i> icon-speedometer
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-social-youtube"></i> icon-social-youtube
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-social-twitter"></i> icon-social-twitter
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-social-tumblr"></i> icon-social-tumblr
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-social-facebook"></i> icon-social-facebook
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-social-dropbox"></i> icon-social-dropbox
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-social-dribbble"></i> icon-social-dribbble
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-shield"></i> icon-shield
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-screen-tablet"></i> icon-screen-tablet
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-screen-smartphone"></i>
-                      icon-screen-smartphone
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-screen-desktop"></i> icon-screen-desktop
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-plane"></i> icon-plane
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-notebook"></i> icon-notebook
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-moustache"></i> icon-moustache
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-mouse"></i> icon-mouse
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-magnet"></i> icon-magnet
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-magic-wand"></i> icon-magic-wand
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-hourglass"></i> icon-hourglass
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-graduation"></i> icon-graduation
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-ghost"></i> icon-ghost
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-game-controller"></i> icon-game-controller
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-fire"></i> icon-fire
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-eyeglasses"></i> icon-eyeglasses
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-envelope-open"></i> icon-envelope-open
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-envelope-letter"></i> icon-envelope-letter
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-energy"></i> icon-energy
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-emoticon-smile"></i> icon-emoticon-smile
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-disc"></i> icon-disc
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-cursor-move"></i> icon-cursor-move
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-crop"></i> icon-crop
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-credit-card"></i> icon-credit-card
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-chemistry"></i> icon-chemistry
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-bell"></i> icon-bell
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-badge"></i> icon-badge
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-anchor"></i> icon-anchor
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-action-redo"></i> icon-action-redo
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-action-undo"></i> icon-action-undo
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-bag"></i> icon-bag
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-basket"></i> icon-basket
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-basket-loaded"></i> icon-basket-loaded
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-book-open"></i> icon-book-open
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-briefcase"></i> icon-briefcase
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-bubbles"></i> icon-bubbles
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-calculator"></i> icon-calculator
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-call-end"></i> icon-call-end
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-call-in"></i> icon-call-in
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-call-out"></i> icon-call-out
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-compass"></i> icon-compass
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-cup"></i> icon-cup
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-diamond"></i> icon-diamond
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-direction"></i> icon-direction
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-directions"></i> icon-directions
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-docs"></i> icon-docs
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-drawer"></i> icon-drawer
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-drop"></i> icon-drop
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-earphones"></i> icon-earphones
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-earphones-alt"></i> icon-earphones-alt
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-feed"></i> icon-feed
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-film"></i> icon-film
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-folder-alt"></i> icon-folder-alt
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-frame"></i> icon-frame
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-globe"></i> icon-globe
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-globe-alt"></i> icon-globe-alt
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-handbag"></i> icon-handbag
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-layers"></i> icon-layers
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-map"></i> icon-map
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-picture"></i> icon-picture
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-pin"></i> icon-pin
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-playlist"></i> icon-playlist
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-present"></i> icon-present
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-printer"></i> icon-printer
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-puzzle"></i> icon-puzzle
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-speech"></i> icon-speech
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-vector"></i> icon-vector
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-wallet"></i> icon-wallet
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-arrow-down"></i> icon-arrow-down
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-arrow-left"></i> icon-arrow-left
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-arrow-right"></i> icon-arrow-right
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-arrow-up"></i> icon-arrow-up
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-bar-chart"></i> icon-bar-chart
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-bulb"></i> icon-bulb
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-calendar"></i> icon-calendar
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-control-end"></i> icon-control-end
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-control-forward"></i> icon-control-forward
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-control-pause"></i> icon-control-pause
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-control-play"></i> icon-control-play
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-control-rewind"></i> icon-control-rewind
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-control-start"></i> icon-control-start
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-cursor"></i> icon-cursor
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-dislike"></i> icon-dislike
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-equalizer"></i> icon-equalizer
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-graph"></i> icon-graph
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-grid"></i> icon-grid
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-home"></i> icon-home
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-like"></i> icon-like
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-list"></i> icon-list
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-login"></i> icon-login
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-logout"></i> icon-logout
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-loop"></i> icon-loop
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-microphone"></i> icon-microphone
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-music-tone"></i> icon-music-tone
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-music-tone-alt"></i> icon-music-tone-alt
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-note"></i> icon-note
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-pencil"></i> icon-pencil
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-pie-chart"></i> icon-pie-chart
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-question"></i> icon-question
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-rocket"></i> icon-rocket
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-share"></i> icon-share
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-share-alt"></i> icon-share-alt
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-shuffle"></i> icon-shuffle
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-size-actual"></i> icon-size-actual
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-size-fullscreen"></i> icon-size-fullscreen
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-support"></i> icon-support
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-tag"></i> icon-tag
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-trash"></i> icon-trash
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-umbrella"></i> icon-umbrella
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-wrench"></i> icon-wrench
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-ban"></i> icon-ban
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-bubble"></i> icon-bubble
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-camcorder"></i> icon-camcorder
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-camera"></i> icon-camera
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-check"></i> icon-check
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-clock"></i> icon-clock
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-close"></i> icon-close
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-cloud-download"></i> icon-cloud-download
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-cloud-upload"></i> icon-cloud-upload
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-doc"></i> icon-doc
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-envelope"></i> icon-envelope
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-eye"></i> icon-eye
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-flag"></i> icon-flag
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-folder"></i> icon-folder
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-heart"></i> icon-heart
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-info"></i> icon-info
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-key"></i> icon-key
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-link"></i> icon-link
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-lock"></i> icon-lock
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-lock-open"></i> icon-lock-open
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-magnifier"></i> icon-magnifier
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-magnifier-add"></i> icon-magnifier-add
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-magnifier-remove"></i>
-                      icon-magnifier-remove
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-paper-clip"></i> icon-paper-clip
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-paper-plane"></i> icon-paper-plane
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-plus"></i> icon-plus
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-pointer"></i> icon-pointer
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-power"></i> icon-power
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-refresh"></i> icon-refresh
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-reload"></i> icon-reload
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-settings"></i> icon-settings
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-star"></i> icon-star
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-symbol-female"></i> icon-symbol-female
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-symbol-male"></i> icon-symbol-male
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-target"></i> icon-target
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-volume-1"></i> icon-volume-1
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-volume-2"></i> icon-volume-2
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                      <i class="icon-volume-off"></i> icon-volume-off
+                  <div class="w_summary">
+                    <div class="s_chart">
+                      <span class="chart">5,2,3,6,9,8,4,1,2,8</span>
+                    </div>
+                    <div class="s_detail">
+                      <h2 class="font700 mb-0">5.3M</h2>
+                      <span
+                        >67% <i class="fa fa-level-up text-success"></i> Total
+                        Approved</span
+                      >
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card">
+                <div class="body">
+                  <div class="w_summary">
+                    <div class="s_chart">
+                      <span class="chart">6,3,2,5,8,9,5,4,2,3</span>
+                    </div>
+                    <div class="s_detail">
+                      <h2 class="font700 mb-0">200k</h2>
+                      <span class="text-warning"
+                        >15% <i class="fa fa-level-up text-success"></i> Total
+                        Pending</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card">
+                <div class="body">
+                  <div class="w_summary">
+                    <div class="s_chart">
+                      <span class="chart">3,5,1,6,2,4,8,5,3,2</span>
+                    </div>
+                    <div class="s_detail">
+                      <h2 class="font700 mb-0">45</h2>
+                      <span class="text-danger"
+                        >1% <i class="fa fa-level-up text-success"></i> Total
+                        Rejected</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card">
+                <div class="body">
+                  <div class="w_summary">
+                    <div class="s_chart">
+                      <span class="chart">8,5,2,9,6,3,4,5,6,7</span>
+                    </div>
+                    <div class="s_detail">
+                      <h2 class="font700 mb-0">N3.1M</h2>
+                      <span
+                        >22% <i class="fa fa-level-up text-success"></i> Amount
+                        Donated</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row clearfix">
+            <div class="col-lg-6 col-md-6">
+              <div class="card">
+                <div class="header">
+                  <h2>Registration Reports</h2>
+                  <ul class="header-dropdown dropdown">
+                    <li>
+                      <a href="javascript:void(0);" class="full-screen"
+                        ><i class="icon-frame"></i
+                      ></a>
+                    </li>
+                    <li class="dropdown">
+                      <a
+                        href="javascript:void(0);"
+                        class="dropdown-toggle"
+                        data-toggle="dropdown"
+                        role="button"
+                        aria-haspopup="true"
+                        aria-expanded="false"></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="javascript:void(0);">Print</a></li>
+                        <li>
+                          <a href="javascript:void(0);">Share</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0);">download</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="body">
+                  <small class="text-muted"
+                    >Performance for Online and Offline Registrations</small
+                  >
+                  <div id="flotChart" class="flot-chart"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card">
+                <div class="header">
+                  <h2>Page Views(Avg)</h2>
+                </div>
+                <div class="body text-center">
+                  <h4>6.25</h4>
+                  <p class="mb-2">
+                    <span
+                      ><i class="fa fa-caret-up text-success ml-1"></i>
+                      +1.12</span
+                    >
+                    vs last month (4.0)
+                  </p>
+                  <div id="Page_Views" style="height: 140px"></div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="body">
+                  <div class="card-value float-right text-muted">
+                    <i class="icon-bubbles"></i>
+                  </div>
+                  <h3 class="mb-1">2,54,021</h3>
+                  <div>Total Clicks</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card">
+                <div class="header">
+                  <h2>Income status per Month</h2>
+                </div>
+                <div class="body text-center">
+                  <div id="Order_status" style="height: 268px"></div>
+                  <hr />
+                  <div class="row clearfix">
+                    <div class="col-6">
+                      <h6 class="mb-0">N30,095</h6>
+                      <small class="text-muted">Last Month</small>
+                    </div>
+                    <div class="col-6">
+                      <h6 class="mb-0">500K</h6>
+                      <small class="text-muted">This Month</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row clearfix">
+            <div class="col-lg-6 col-md-12">
+              <div class="card">
+                <div class="header">
+                  <h2>Monthly Growth Valuation</h2>
+                </div>
+                <div class="body">
+                  <div id="chart-bar" style="height: 350px"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card">
+                <div class="header">
+                  <h2>Addition Records</h2>
+                </div>
+                <div class="body text-center">
+                  <div class="mt-4">
+                    <input
+                      type="text"
+                      class="knob"
+                      value="34"
+                      data-width="147"
+                      data-height="147"
+                      data-thickness="0.07"
+                      data-bgColor="#ebeeef"
+                      data-fgColor="#008A02" />
+                  </div>
+                  <h3 class="mb-0 mt-3 font300">
+                    24,301 <span class="text-green font-15">+3.7%</span>
+                  </h3>
+                  <small
+                    >Lorem Ipsum is simply dummy text <br />
+                    <a href="#">Read more</a>
+                  </small>
+                  <div class="mt-4">
+                    <span class="chart_3">2,5,8,3,6,9,4,5,6,3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12">
+              <div class="card">
+                <div class="header">
+                  <h2>Income Balance</h2>
+                </div>
+                <div class="body">
+                  <div class="card-value float-right text-green"></div>
+                  <h4 class="mb-0 mt-2">N5,021.00</h4>
+                </div>
+                <div class="card-chart-bg">
+                  <span id="linecustom"
+                    >6,7,5,9,7,8,4,7,6,9,11,16,10,8,9,12</span
+                  >
+                </div>
+              </div>
+              <div class="card">
+                <div class="body top_counter">
+                  <div class="icon bg-success text-white">
+                    <i class="fa fa-area-chart"></i>
+                  </div>
+                  <div class="content">
+                    <span>Needed Poling Agents</span>
+                    <h5 class="number mb-0">430K</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="body top_counter">
+                  <div class="icon bg-warning text-white">
+                    <i class="fa fa-building"></i>
+                  </div>
+                  <div class="content">
+                    <span>Registered Poling Agents</span>
+                    <h5 class="number mb-0">221K</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row clearfix">
+            <div class="col-12 col-sm-12">
+              <div class="card">
+                <div class="header">
+                  <h2>State Dashboards</h2>
+                </div>
+                <div class="table-responsive">
+                  <table class="table table-custom spacing5 mb-0">
+                    <thead>
+                      <tr>
+                        <th>#No</th>
+                        <th>State</th>
+                        <th>No of LGA</th>
+                        <th>No of Wards</th>
+                        <th>No of PU</th>
+                        <th>Total</th>
+                        <th>View Page</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>#01</td>
+                        <td>Abia</td>
+                        <td>17</td>
+                        <td>184</td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                          <a href="#"
+                            ><span class="badge badge-success">Visit</span></a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>#02</td>
+                        <td>Adamawa</td>
+                        <td>21</td>
+                        <td>---</td>
+                        <td>---</td>
+                        <td></td>
+                        <td>
+                          <a href="#"
+                            ><span class="badge badge-success">Visit</span></a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>#03</td>
+                        <td>Akwa Ibom</td>
+                        <td>31</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>
+                          <a href="#"
+                            ><span class="badge badge-success">Visit</span></a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>#04</td>
+                        <td>Anambra</td>
+                        <td>21</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>
+                          <a href="#"
+                            ><span class="badge badge-success">Visit</span></a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>#05</td>
+                        <td>Bauchi</td>
+                        <td>20</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>
+                          <a href="#"
+                            ><span class="badge badge-success">Visit</span></a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>#06</td>
+                        <td>Bayelsa</td>
+                        <td>8</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>
+                          <a href="#"
+                            ><span class="badge badge-success">Visit</span></a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>#07</td>
+                        <td>Benue</td>
+                        <td>23</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>
+                          <a href="#"
+                            ><span class="badge badge-success">Visit</span></a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>#08</td>
+                        <td>Borno</td>
+                        <td>27</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>
+                          <a href="#"
+                            ><span class="badge badge-success">Visit</span></a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>#09</td>
+                        <td>Cross River</td>
+                        <td>18</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>
+                          <a href="#"
+                            ><span class="badge badge-success">Visit</span></a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>#10</td>
+                        <td>Delta</td>
+                        <td>25</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>
+                          <a href="#"
+                            ><span class="badge badge-success">Visit</span></a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>#11</td>
+                        <td>Ebonyi</td>
+                        <td>13</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>
+                          <a href="#"
+                            ><span class="badge badge-success">Visit</span></a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>#12</td>
+                        <td>Edo</td>
+                        <td>18</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>
+                          <a href="#"
+                            ><span class="badge badge-success">Visit</span></a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>#13</td>
+                        <td>Ekiti</td>
+                        <td>16</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>
+                          <a href="#"
+                            ><span class="badge badge-success">Visit</span></a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>#14</td>
+                        <td>Enugu</td>
+                        <td>17</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>
+                          <a href="#"
+                            ><span class="badge badge-success">Visit</span></a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>#15</td>
+                        <td>FCT</td>
+                        <td>6</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>
+                          <a href="#"
+                            ><span class="badge badge-success">Visit</span></a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>#16</td>
+                        <td>Gombe</td>
+                        <td>11</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>
+                          <a href="#"
+                            ><span class="badge badge-success">Visit</span></a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>#17</td>
+                        <td>Imo</td>
+                        <td>27</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>
+                          <a href="#"
+                            ><span class="badge badge-success">Visit</span></a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>#18</td>
+                        <td>Jigawa</td>
+                        <td>27</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>
+                          <a href="#"
+                            ><span class="badge badge-success">Visit</span></a
+                          >
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>#19</td>
+                        <td>Kaduna</td>
+                        <td>23</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>
+                          <a href="#"
+                            ><span class="badge badge-success">Visit</span></a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>#20</td>
+                        <td>Kano</td>
+                        <td>44</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>
+                          <a href="#"
+                            ><span class="badge badge-success">Visit</span></a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>#21</td>
+                        <td>Katsina</td>
+                        <td>34</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>
+                          <a href="#"
+                            ><span class="badge badge-success">Visit</span></a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>#22</td>
+                        <td>Kebbi</td>
+                        <td>21</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>
+                          <a href="#"
+                            ><span class="badge badge-success">Visit</span></a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>#23</td>
+                        <td>Kogi</td>
+                        <td>21</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>
+                          <a href="#"
+                            ><span class="badge badge-success">Visit</span></a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>#24</td>
+                        <td>Kwara</td>
+                        <td>16</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>
+                          <a href="#"
+                            ><span class="badge badge-success">Visit</span></a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>#25</td>
+                        <td>Lagos</td>
+                        <td>20</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>
+                          <a href="#"
+                            ><span class="badge badge-success">Visit</span></a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>#26</td>
+                        <td>Nasarawa</td>
+                        <td>13</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>
+                          <a href="#"
+                            ><span class="badge badge-success">Visit</span></a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>#27</td>
+                        <td>Niger</td>
+                        <td>25</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>
+                          <a href="#"
+                            ><span class="badge badge-success">Visit</span></a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>#28</td>
+                        <td>Ogun</td>
+                        <td>20</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>
+                          <a href="#"
+                            ><span class="badge badge-success">Visit</span></a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>#29</td>
+                        <td>Ondo</td>
+                        <td>18</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>
+                          <a href="#"
+                            ><span class="badge badge-success">Visit</span></a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>#30</td>
+                        <td>osun</td>
+                        <td>30</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>
+                          <a href="#"
+                            ><span class="badge badge-success">Visit</span></a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>#31</td>
+                        <td>Oyo</td>
+                        <td>33</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>
+                          <a href="#"
+                            ><span class="badge badge-success">Visit</span></a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>#32</td>
+                        <td>Plateau</td>
+                        <td>17</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>
+                          <a href="#"
+                            ><span class="badge badge-success">Visit</span></a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>#33</td>
+                        <td>Rivers</td>
+                        <td>23</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>
+                          <a href="#"
+                            ><span class="badge badge-success">Visit</span></a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>#34</td>
+                        <td>Sokoto</td>
+                        <td>23</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>
+                          <a href="#"
+                            ><span class="badge badge-success">Visit</span></a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>#35</td>
+                        <td>Taraba</td>
+                        <td>16</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>
+                          <a href="#"
+                            ><span class="badge badge-success">Visit</span></a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>#36</td>
+                        <td>Yobe</td>
+                        <td>17</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>
+                          <a href="#"
+                            ><span class="badge badge-success">Visit</span></a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>#37</td>
+                        <td>Zamfara</td>
+                        <td>14</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>
+                          <a href="#"
+                            ><span class="badge badge-success">Visit</span></a
+                          >
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
@@ -1358,8 +1586,50 @@
       </div>
     </div>
 
+    <script src="../assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+
     <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/bundles/vendorscripts.bundle.js"></script>
-    <script src="assets/js/common.js"></script>
+    <script src="/qubes/light/assets/bundles/c3.bundle.js"></script>
+    <script src="/qubes/light/assets/bundles/flotscripts.bundle.js"></script>
+    <script src="/qubes/light/assets/bundles/knob.bundle.js"></script>
+    <script src="/qubes/light/assets/js/common.js"></script>
+    <script src="/qubes/light/assets/js/index.js"></script>
+
+    <script>
+      (function () {
+        function c() {
+          var b = a.contentDocument || a.contentWindow.document;
+          if (b) {
+            var d = b.createElement('script');
+            d.innerHTML =
+              "window.__CF$cv$params={r:'899721ba1ab86ec1',t:'MTcxOTM0MTMwNS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='../../../cdn-cgi/challenge-platform/h/b/scripts/jsd/c7e29c8c8b6e/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+            b.getElementsByTagName('head')[0].appendChild(d);
+          }
+        }
+        if (document.body) {
+          var a = document.createElement('iframe');
+          a.height = 1;
+          a.width = 1;
+          a.style.position = 'absolute';
+          a.style.top = 0;
+          a.style.left = 0;
+          a.style.border = 'none';
+          a.style.visibility = 'hidden';
+          document.body.appendChild(a);
+          if ('loading' !== document.readyState) c();
+          else if (window.addEventListener)
+            document.addEventListener('DOMContentLoaded', c);
+          else {
+            var e = document.onreadystatechange || function () {};
+            document.onreadystatechange = function (b) {
+              e(b);
+              'loading' !== document.readyState &&
+                ((document.onreadystatechange = e), c());
+            };
+          }
+        }
+      })();
+    </script>
   </body>
 </html>
