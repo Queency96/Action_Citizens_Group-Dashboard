@@ -893,15 +893,64 @@
                 <table class="table table-hover table-custom spacing5">
                   <tbody>
                     <tr>
-                      <td>
-                        <a href="#">Defecting members Email 1</a>
-                        <p class="mb-0 text-muted">
-                          Sent on 3-July-2024 11:38am
-                        </p>
-                      </td>
+                        <th>
+                            <form>
+                                <label for="state">Select State:</label>
+                                <select id="state" name="state" onchange="updateLocalGovernments(this.value)">
+                                    <option value="">Select State</option>
+                                    <option value="Abia">Abia</option>
+                                    <option value="Adamawa">Adamawa</option>
+                                    <option value="Anambra">Anambra</option>
+                                    <option value="Akwa Ibom">Akwa Ibom</option>
+                                    <option value="Bauchi">Bauchi</option>
+                                    <option value="Bayelsa">Bayelsa</option>
+                                    <option value="Benue">Benue</option>
+                                    <option value="Borno">Borno</option>
+                                    <option value="Cross River">Cross River</option>
+                                    <option value="Delta">Delta</option>
+                                    <option value="Ebonyi">Ebonyi</option>
+                                    <option value="Enugu">Enugu</option>
+                                    <option value="Edo">Edo</option>
+                                    <option value="Ekiti">Ekiti</option>
+                                    <option value="Abuja">Abuja</option>
+                                    <option value="Gombe">Gombe</option>
+                                    <option value="Imo">Imo</option>
+                                    <option value="Jigawa">Jigawa</option>
+                                    <option value="Kaduna">Kaduna</option>
+                                    <option value="Kano">Kano</option>
+                                    <option value="Katsina">Katsina</option>
+                                    <option value="Kebbi">Kebbi</option>
+                                    <option value="Kogi">Kogi</option>
+                                    <option value="Kwara">Kwara</option>
+                                    <option value="Lagos">Lagos</option>
+                                    <option value="Nasarawa">Nasarawa</option>
+                                    <option value="Niger">Niger</option>
+                                    <option value="Ogun">Ogun</option>
+                                    <option value="Ondo">Ondo</option>
+                                    <option value="Osun">Osun</option>
+                                    <option value="Oyo">Oyo</option>
+                                    <option value="Plateau">Plateau</option>
+                                    <option value="Rivers">Rivers</option>
+                                    <option value="Sokoto">Sokoto</option>
+                                    <option value="Taraba">Taraba</option>
+                                    <option value="Yobe">Yobe</option>
+                                    <option value="Zamfara">Zamfara</option>
+                                </select>
+                            
+
+                                
+                        </th>
+                        
+                      
                       <td class="text-right">
-                        <h6 class="font-14 mb-0">1.3MB</h6>
-                        <span class="text-muted">Emails deliverd</span>
+                        <label for="localGovernment">Select Local Government:</label>
+                                <select id="localGovernment" name="localGovernment">
+                                    <option value="">Select Local Government</option>
+                                </select>
+                            </form>
+
+                        <!-- <h6 class="font-14 mb-0">1.3MB</h6>
+                        <span class="text-muted">Emails deliverd</span> -->
                       </td>
                       <td class="w350">
                         <div class="progress progress-xs">
@@ -1116,6 +1165,8 @@
     <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/bundles/vendorscripts.bundle.js"></script>
     <script src="assets/js/common.js"></script>
+    <script src="../light/assets/js/lga_select.js"></script>
+    <script src="../light/assets/js/lga_select.js"></script>
 
     <script>
       (function () {
