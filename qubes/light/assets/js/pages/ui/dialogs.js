@@ -43,7 +43,7 @@ function showSuccessMessage() {
     title: 'E-mail verified successfully!',
     content: el,
     icon: 'success',
-    text: 'Note: Official group link has also been sent to your email.',
+    text: 'Note: The official group link has also been sent to your email.',
     button: 'Close',
     closeOnClickOutside: false,
   });
