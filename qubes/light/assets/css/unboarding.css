@@ -23,7 +23,6 @@
   font-size: 17px;
 }
 
-
 @font-face {
   font-family: 'weathericons';
   src: url('../fonts/weathericons-regular-webfont.eot');
@@ -59,9 +58,9 @@ a:focus {
   color: #29c82c;
   text-decoration: none;
 }
-.btn-primary:hover{
-    background-color: #58f55e;
-    border: none;
+.btn-primary:hover {
+  background-color: #58f55e;
+  border: none;
 }
 @media screen and (max-width: 767px) {
   .hidden-xs {
@@ -165,11 +164,15 @@ html.fullscreen-bg #wrapper {
   position: relative;
   box-shadow: none;
   padding: 20px;
-  
 }
-.log-reg{
-    background-color: rgba(0, 128, 0, 0.431);/* background-color: rgba(0, 0, 0, 0.485); */
-    /* opacity: 0.5; */
+.log-reg {
+  background-color: rgba(
+    0,
+    128,
+    0,
+    0.431
+  ); /* background-color: rgba(0, 0, 0, 0.485); */
+  /* opacity: 0.5; */
 }
 @media screen and (max-width: 767px) {
   .card .header {
@@ -814,7 +817,6 @@ ul.choose-skin li.active div::after {
   justify-content: left;
   text-align: center;
   height: 100vh;
-  
 }
 .auth-main .auth_div {
   width: 100%;
@@ -837,13 +839,12 @@ ul.choose-skin li.active div::after {
   margin: 0 auto;
   width: 500px;
 }
-.state-lga{
-    width: 225px;
-    padding: 5px;
-    border-radius: 10px;
-    border: solid 0.2px;
-    outline: none;
-    
+.state-lga {
+  width: 225px;
+  padding: 5px;
+  border-radius: 10px;
+  border: solid 0.2px;
+  outline: none;
 }
 .auth-main .auth_right {
   width: 500px;
@@ -978,7 +979,7 @@ ul.choose-skin li.active div::after {
 }
 .separator-linethrough:after {
   display: block;
-  vertical-align:top;
+  vertical-align: top;
   *vertical-align: auto;
   *zoom: 1;
   *display: block;
@@ -986,10 +987,12 @@ ul.choose-skin li.active div::after {
   top: 10%;
   width: 100%;
   content: '';
-  
+
   border-top: 1px solid #ced4da;
   z-index: 0;
 }
 .block-header {
   padding: 0 15px;
 }
+
+
