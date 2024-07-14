@@ -2255,6 +2255,7 @@ html.fullscreen-bg #wrapper {
 @media screen and (max-width: 1200px) {
   #left-sidebar {
     width: 45px;
+    /* display: none; */
   }
 }
 #left-sidebar .sidebar-nav {
@@ -2265,6 +2266,7 @@ html.fullscreen-bg #wrapper {
 }
 .sidebar_icon {
   width: 45px;
+  display: none;
 }
 .sidebar_icon .nav-tabs {
   border: 0;
