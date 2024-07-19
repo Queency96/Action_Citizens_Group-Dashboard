@@ -19,6 +19,8 @@ $(function () {
       showAutoCloseTimerMessage();
     } else if (type === 'prompt') {
       showPromptMessage();
+    } else if (type === 'unsuccessful') {
+      showUnsuccessfulMessage();
     } else if (type === 'ajax-loader') {
       showAjaxLoaderMessage();
     }
@@ -44,6 +46,17 @@ function showSuccessMessage() {
     content: el,
     icon: 'success',
     text: 'Note: The official group link has also been sent to your email.',
+    button: 'Close',
+    closeOnClickOutside: false,
+  });
+}
+
+function showUnsuccessfulMessage() {
+  swal({
+    title: 'E-mail verified unsuccessful!',
+    //   content: el,
+    icon: 'error',
+    text: 'You enter wrong OTP code !',
     button: 'Close',
     closeOnClickOutside: false,
   });
