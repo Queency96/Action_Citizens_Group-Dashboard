@@ -68,7 +68,7 @@
               </div>
               <div class="form-group">
                 <!-- <label for="state">Select State:</label> -->
-                                <select class="state-lga" id="state" name="state" onchange="updateLocalGovernments(this.value)">
+                                <!-- <select class="state-lga" id="state" name="state" onchange="updateLocalGovernments(this.value)">
                                     <option value="">Select State</option>
                                     <option value="Abia">Abia</option>
                                     <option value="Adamawa">Adamawa</option>
@@ -107,11 +107,28 @@
                                     <option value="Taraba">Taraba</option>
                                     <option value="Yobe">Yobe</option>
                                     <option value="Zamfara">Zamfara</option>
+                                </select> -->
+                                <select class="form-control round" id="stateSelect" onchange="populateLGAs()">
+                                  <option value="">Select State</option>
                                 </select>
-                                <select name="localGovernment" class="state-lga" id="localGovernment">
+              </div>
+              <div class="form-group">
+                                <select class="form-control round" id="lgaSelect" onchange="populateWards()">
                                   <option value="">Select LGA</option>
                                 </select>
               </div>
+              <div class="form-group">
+                
+              <select class="form-control round" id="wardSelect" onchange="populatePollingUnits()">
+                <option value="">Select Ward</option>
+              </select>
+              </div>
+              <div class="form-group">
+              <select class=" form-control round" id="pollingUnitSelect">
+                <option value="">Select Polling Unit</option>
+              </select>
+              </div>
+
               <!-- <div class="form-group"> -->
                 
                 <!-- <input
@@ -119,7 +136,7 @@
                   class="form-control round"
                   placeholder="Select your state" /> -->
               <!-- </div> -->
-              <div class="form-group">
+              <!-- <div class="form-group">
               <input
                   type="text"
                   class="form-control round"
@@ -130,7 +147,7 @@
                   type="text"
                   class="form-control round"
                   placeholder="Enter your Poling Unit" />
-              </div>
+              </div> -->
               <!-- <div class="form-group">
                 <input
                   type="password"
@@ -212,7 +229,8 @@
     <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/bundles/vendorscripts.bundle.js"></script>
     <!-- <script src="assets/js/common.js"></script> -->
-    <script src="assets/js/lga_select.js"></script>
+    <!-- <script src="assets/js/lga_select.js"></script> -->
+    <script src="/qubes/light/assets/js/select_state.js"></script>
 
     <!-- <script>
       (function () {
