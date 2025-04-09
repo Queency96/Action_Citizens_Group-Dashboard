@@ -1,0 +1,619 @@
+{% extends "header/header.html" %} 
+{% load static %} 
+
+{% block title %} 
+Create Account 
+{% endblock %} 
+
+{% block content %}
+
+<div class="auth-main">
+  <div class="auth_div">
+    <div class="card">
+      <div class="auth_brand log-reg">
+        <a class="navbar-brand" href="javascript:void(0);"
+          ><img
+            style="width: 60px"
+            src="{% static 'assets/images//image/logo-removebg-preview.png' %}"
+            alt="" />
+          <img
+            style="width: 50px"
+            src="{% static 'assets/images/image/ACG-removebg-preview(1).png' %}"
+            alt=""
+        /></a>
+      </div>
+
+      <div class="body body-main">
+        <p class="lead">Register as</p>
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="ward-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#ward"
+              type="button"
+              role="tab"
+              aria-controls="ward"
+              aria-selected="true"
+            >
+              Ward
+            </button>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="local-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#local"
+              type="button"
+              role="tab"
+              aria-controls="local"
+              aria-selected="false"
+            >
+              Local
+            </button>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="state-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#state"
+              type="button"
+              role="tab"
+              aria-controls="state"
+              aria-selected="false"
+            >
+              State
+            </button>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="national-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#national"
+              type="button"
+              role="tab"
+              aria-controls="national"
+              aria-selected="false"
+            >
+              National
+            </button>
+          </li>
+        </ul>
+
+
+        {% comment %} to manage all forms {% endcomment %}
+        <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="ward" role="tabpanel" aria-labelledby="ward-tab">  
+        <form action="#" method="post" id="ward-form" class="form-auth-small m-t-20" novalidate>
+          {% csrf_token %}
+
+          <input type="hidden" name="account_type" value="ward">
+
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control round"
+              placeholder="Enter Your Fullname"
+              name="fullname"
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control round"
+              placeholder="Username"
+              name="username"
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="email"
+              class="form-control round"
+              placeholder="Your email"
+              name="email"
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="number"
+              class="form-control round"
+              placeholder="mobile number"
+              name="phone"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control round"
+              placeholder="State"
+              name="state"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control round"
+              placeholder="Ward"
+              name="ward"
+            />
+          </div>
+
+          {% comment %} <div class="form-group">
+            <select
+              class="form-control round"
+              id="stateSelect"
+              onchange="populateLGAs()"
+            >
+              <option value="">Select State</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <select
+              class="form-control round"
+              id="lgaSelect"
+              onchange="populateWards()"
+            >
+              <option value="">Select LGA</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <select
+              class="form-control round"
+              id="wardSelect"
+              onchange="populatePollingUnits()"
+            >
+              <option value="">Select Ward</option>
+            </select>
+          </div> {% endcomment %}
+
+          {% comment %} <div class="form-group">
+            <select class="form-control round" id="pollingUnitSelect">
+              <option value="">Select Polling Unit</option>
+            </select>
+          </div> {% endcomment %}
+
+          <div class="form-group">
+            <input
+              type="password"
+              class="form-control round"
+              placeholder="password"
+              name="password"
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="password"
+              class="form-control round"
+              placeholder="confirm password"
+              name="password2"
+            />
+          </div>
+
+          {% comment %} <div class="form-group">
+            <input
+              type="file"
+              class="form-control round"
+              placeholder="Upload passport or selfie"
+            />
+          </div> {% endcomment %}
+
+          <button type="submit" id="btn-ward" class="btn btn-primary btn-round btn-block">
+            <span id="btn-text">Register Now</span>
+            <span class="spinner-border" style="width: 1rem; height: 1rem; display: none"></span>
+          </button>
+        </form>
+      </div>
+
+
+      {% comment %} form for local admin {% endcomment %}
+        <div class="tab-pane fade" id="local" role="tabpanel" aria-labelledby="local-tab">  
+        <form action="#" method="post" id="local-form" class="form-auth-small m-t-20" novalidate>
+          {% csrf_token %}
+
+          <input type="hidden" name="account_type" value="local">
+
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control round"
+              placeholder="Enter Your Fullname"
+              name="fullname"
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control round"
+              placeholder="Username"
+              name="username"
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="email"
+              class="form-control round"
+              placeholder="Your email"
+              name="email"
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="number"
+              class="form-control round"
+              placeholder="mobile number"
+              name="phone"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control round"
+              placeholder="State"
+              name="state"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control round"
+              placeholder="Ward"
+              name="ward"
+            />
+          </div>
+
+          {% comment %} <div class="form-group">
+            <select
+              class="form-control round"
+              id="stateSelect"
+              onchange="populateLGAs()"
+            >
+              <option value="">Select State</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <select
+              class="form-control round"
+              id="lgaSelect"
+              onchange="populateWards()"
+            >
+              <option value="">Select LGA</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <select
+              class="form-control round"
+              id="wardSelect"
+              onchange="populatePollingUnits()"
+            >
+              <option value="">Select Ward</option>
+            </select>
+          </div> {% endcomment %}
+
+          {% comment %} <div class="form-group">
+            <select class="form-control round" id="pollingUnitSelect">
+              <option value="">Select Polling Unit</option>
+            </select>
+          </div> {% endcomment %}
+
+          <div class="form-group">
+            <input
+              type="password"
+              class="form-control round"
+              placeholder="password"
+              name="password"
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="password"
+              class="form-control round"
+              placeholder="confirm password"
+              name="password2"
+            />
+          </div>
+
+          {% comment %} <div class="form-group">
+            <input
+              type="file"
+              class="form-control round"
+              placeholder="Upload passport or selfie"
+            />
+          </div> {% endcomment %}
+
+          <button type="submit" id="btn-ward" class="btn btn-primary btn-round btn-block">
+            <span id="btn-text">Register Now</span>
+            <span class="spinner-border" style="width: 1rem; height: 1rem; display: none"></span>
+          </button>
+        </form>
+      </div>
+
+      {% comment %} form for state admin {% endcomment %}
+        <div class="tab-pane fade" id="state" role="tabpanel" aria-labelledby="state-tab">  
+        <form action="#" method="post" id="state-form" class="form-auth-small m-t-20" novalidate>
+          {% csrf_token %}
+
+          <input type="hidden" name="account_type" value="state">
+
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control round"
+              placeholder="Enter Your Fullname"
+              name="fullname"
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control round"
+              placeholder="Username"
+              name="username"
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="email"
+              class="form-control round"
+              placeholder="Your email"
+              name="email"
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="number"
+              class="form-control round"
+              placeholder="mobile number"
+              name="phone"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control round"
+              placeholder="State"
+              name="state"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control round"
+              placeholder="Ward"
+              name="ward"
+            />
+          </div>
+
+          {% comment %} <div class="form-group">
+            <select
+              class="form-control round"
+              id="stateSelect"
+              onchange="populateLGAs()"
+            >
+              <option value="">Select State</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <select
+              class="form-control round"
+              id="lgaSelect"
+              onchange="populateWards()"
+            >
+              <option value="">Select LGA</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <select
+              class="form-control round"
+              id="wardSelect"
+              onchange="populatePollingUnits()"
+            >
+              <option value="">Select Ward</option>
+            </select>
+          </div> {% endcomment %}
+
+          {% comment %} <div class="form-group">
+            <select class="form-control round" id="pollingUnitSelect">
+              <option value="">Select Polling Unit</option>
+            </select>
+          </div> {% endcomment %}
+
+          <div class="form-group">
+            <input
+              type="password"
+              class="form-control round"
+              placeholder="password"
+              name="password"
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="password"
+              class="form-control round"
+              placeholder="confirm password"
+              name="password2"
+            />
+          </div>
+
+          {% comment %} <div class="form-group">
+            <input
+              type="file"
+              class="form-control round"
+              placeholder="Upload passport or selfie"
+            />
+          </div> {% endcomment %}
+
+          <button type="submit" id="btn-ward" class="btn btn-primary btn-round btn-block">
+            <span id="btn-text">Register Now</span>
+            <span class="spinner-border" style="width: 1rem; height: 1rem; display: none"></span>
+          </button>
+        </form>
+      </div>
+
+
+      {% comment %} form for national admin {% endcomment %}
+        <div class="tab-pane fade" id="national" role="tabpanel" aria-labelledby="national-tab">  
+        <form action="#" method="post" id="national-form" class="form-auth-small m-t-20" novalidate>
+          {% csrf_token %}
+
+          <input type="hidden" name="account_type" value="national">
+
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control round"
+              placeholder="Enter Your Fullname"
+              name="fullname"
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control round"
+              placeholder="Username"
+              name="username"
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="email"
+              class="form-control round"
+              placeholder="Your email"
+              name="email"
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="number"
+              class="form-control round"
+              placeholder="mobile number"
+              name="phone"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control round"
+              placeholder="State"
+              name="state"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control round"
+              placeholder="Ward"
+              name="ward"
+            />
+          </div>
+
+          {% comment %} <div class="form-group">
+            <select
+              class="form-control round"
+              id="stateSelect"
+              onchange="populateLGAs()"
+            >
+              <option value="">Select State</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <select
+              class="form-control round"
+              id="lgaSelect"
+              onchange="populateWards()"
+            >
+              <option value="">Select LGA</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <select
+              class="form-control round"
+              id="wardSelect"
+              onchange="populatePollingUnits()"
+            >
+              <option value="">Select Ward</option>
+            </select>
+          </div> {% endcomment %}
+
+          {% comment %} <div class="form-group">
+            <select class="form-control round" id="pollingUnitSelect">
+              <option value="">Select Polling Unit</option>
+            </select>
+          </div> {% endcomment %}
+
+          <div class="form-group">
+            <input
+              type="password"
+              class="form-control round"
+              placeholder="password"
+              name="password"
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="password"
+              class="form-control round"
+              placeholder="confirm password"
+              name="password2"
+            />
+          </div>
+
+          {% comment %} <div class="form-group">
+            <input
+              type="file"
+              class="form-control round"
+              placeholder="Upload passport or selfie"
+            />
+          </div> {% endcomment %}
+
+          <button type="submit" id="btn-ward" class="btn btn-primary btn-round btn-block">
+            <span id="btn-text">Register Now</span>
+            <span class="spinner-border" style="width: 1rem; height: 1rem; display: none"></span>
+          </button>
+        </form>
+      </div>
+
+    
+
+
+
+      </div>
+      
+
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
